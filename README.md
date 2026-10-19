@@ -1,17 +1,25 @@
 <div align="center">
 
-<h1>in_app_update</h1>
+<img src="assets/banner.svg" alt="in_app_update — Keep every user on the latest version of your Flutter app" width="100%" />
 
-<h3>Keep every user on the latest version of your Flutter app.</h3>
+<br />
+<br />
 
 <p>
-  Google Play <b>In-App Updates</b> on Android · <b>App Store</b> version check on iOS · one widget
+  <img src="https://img.shields.io/badge/Android-Play%20In--App%20Updates-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android" />
+  <img src="https://img.shields.io/badge/iOS-App%20Store%20check-000000?style=for-the-badge&logo=apple&logoColor=white" alt="iOS" />
+  <img src="https://img.shields.io/badge/Flutter-3.24%2B-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter 3.24+" />
+  <img src="https://img.shields.io/badge/License-MIT-54C5F8?style=for-the-badge" alt="License" />
 </p>
 
 <p>
-  <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white" alt="Android" />
-  <img src="https://img.shields.io/badge/iOS-000000?style=flat-square&logo=apple&logoColor=white" alt="iOS" />
-  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter" />
+  <a href="#-features"><b>Features</b></a>
+  &nbsp;·&nbsp;
+  <a href="#-quick-start"><b>Quick start</b></a>
+  &nbsp;·&nbsp;
+  <a href="#-api-reference"><b>API</b></a>
+  &nbsp;·&nbsp;
+  <a href="example/"><b>Example</b></a>
 </p>
 
 </div>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-label="in_app_update — Keep every user on the latest version of your Flutter app">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1A33"/>
+      <stop offset="0.55" stop-color="#0E2A52"/>
+      <stop offset="1" stop-color="#02569B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#54C5F8"/>
+      <stop offset="1" stop-color="#3DDC84"/>
+    </linearGradient>
+    <linearGradient id="arrow" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#3DDC84"/>
+      <stop offset="1" stop-color="#54C5F8"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.5" r="0.4">
+      <stop offset="0" stop-color="#54C5F8" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#54C5F8" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.2" fill="#FFFFFF" fill-opacity="0.07"/>
+    </pattern>
+    <clipPath id="card"><rect width="1280" height="360" rx="28"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#card)">
+    <rect width="1280" height="360" fill="url(#bg)"/>
+    <rect width="1280" height="360" fill="url(#dots)"/>
+    <rect width="1280" height="360" fill="url(#glow)"/>
+
+    <!-- Phone with update arrow -->
+    <g transform="translate(960 52)">
+      <rect x="0" y="0" width="150" height="256" rx="26" fill="#FFFFFF" fill-opacity="0.06" stroke="#FFFFFF" stroke-opacity="0.35" stroke-width="2.5"/>
+      <rect x="56" y="14" width="38" height="6" rx="3" fill="#FFFFFF" fill-opacity="0.35"/>
+      <circle cx="75" cy="118" r="50" fill="none" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="8"/>
+      <path d="M75 68 A50 50 0 1 1 30.7 141" fill="none" stroke="url(#accent)" stroke-width="8" stroke-linecap="round"/>
+      <path d="M75 146 V94 M56 112 L75 93 L94 112" fill="none" stroke="url(#arrow)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="28" y="196" width="94" height="30" rx="15" fill="url(#accent)"/>
+      <text x="75" y="216" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5" fill="#0B1A33">UPDATE</text>
+    </g>
+
+    <!-- Wordmark -->
+    <text x="88" y="118" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="600" letter-spacing="4" fill="#54C5F8">FLUTTER PLUGIN</text>
+    <text x="84" y="190" font-family="'SF Mono', 'JetBrains Mono', Menlo, Consolas, 'Liberation Mono', monospace" font-size="68" font-weight="700" fill="#FFFFFF">in_app_update</text>
+    <rect x="88" y="214" width="96" height="5" rx="2.5" fill="url(#accent)"/>
+    <text x="88" y="262" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="24" fill="#FFFFFF" fill-opacity="0.85">Keep every user on the latest version of your Flutter app.</text>
+    <text x="88" y="298" font-family="-apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="17" fill="#FFFFFF" fill-opacity="0.55">Play In-App Updates on Android  ·  App Store check on iOS  ·  one widget</text>
+  </g>
+</svg>
