@@ -5,7 +5,7 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-OUT="${TMPDIR:-/tmp}/flutter_inapp_update_ios_tests/InAppUpdateTests.xctest"
+OUT="${TMPDIR:-/tmp}/in_app_update_kit_ios_tests/InAppUpdateTests.xctest"
 PLATFORM="$(xcrun --show-sdk-platform-path)"
 FRAMEWORKS="$PLATFORM/Developer/Library/Frameworks"
 LIBS="$PLATFORM/Developer/usr/lib"
@@ -26,7 +26,7 @@ xcrun --sdk macosx swiftc -warnings-as-errors -parse-as-library \
   -module-name InAppUpdateTests \
   -F "$FRAMEWORKS" -I "$LIBS" -L "$LIBS" \
   -Xlinker -bundle -Xlinker -rpath -Xlinker "$FRAMEWORKS" -Xlinker -rpath -Xlinker "$LIBS" \
-  "$ROOT/ios/flutter_inapp_update/Sources/flutter_inapp_update/InAppUpdateInfo.swift" "$ROOT"/ios/Tests/*.swift \
+  "$ROOT/ios/in_app_update_kit/Sources/in_app_update_kit/InAppUpdateInfo.swift" "$ROOT"/ios/Tests/*.swift \
   -o "$OUT/Contents/MacOS/InAppUpdateTests"
 
 xcrun xctest "$OUT"

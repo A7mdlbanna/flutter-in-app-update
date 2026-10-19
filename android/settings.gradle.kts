@@ -1,1 +1,1 @@
-rootProject.name = "flutter_inapp_update"
+rootProject.name = "in_app_update_kit"

@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:flutter_inapp_update/flutter_inapp_update.dart';
+import 'package:in_app_update_kit/in_app_update_kit.dart';
 
 import 'fake_platform.dart';
 

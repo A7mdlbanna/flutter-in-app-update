@@ -9,7 +9,7 @@ public class InAppUpdatePlugin: NSObject, FlutterPlugin, SKStoreProductViewContr
   private var storeResult: FlutterResult?
 
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "flutter_inapp_update", binaryMessenger: registrar.messenger())
+    let channel = FlutterMethodChannel(name: "in_app_update_kit", binaryMessenger: registrar.messenger())
     registrar.addMethodCallDelegate(InAppUpdatePlugin(), channel: channel)
   }
 

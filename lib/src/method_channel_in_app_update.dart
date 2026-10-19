@@ -7,10 +7,10 @@ import 'types.dart';
 /// [InAppUpdatePlatform] backed by the plugin's Kotlin and Swift code.
 class MethodChannelInAppUpdate extends InAppUpdatePlatform {
   @visibleForTesting
-  final methodChannel = const MethodChannel('flutter_inapp_update');
+  final methodChannel = const MethodChannel('in_app_update_kit');
 
   @visibleForTesting
-  final eventChannel = const EventChannel('flutter_inapp_update/install_state');
+  final eventChannel = const EventChannel('in_app_update_kit/install_state');
 
   Stream<InstallState>? _installStateChanges;
 

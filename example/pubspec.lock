@@ -75,13 +75,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_inapp_update:
-    dependency: "direct main"
-    description:
-      path: ".."
-      relative: true
-    source: path
-    version: "0.0.1"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -100,6 +93,13 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  in_app_update_kit:
+    dependency: "direct main"
+    description:
+      path: ".."
+      relative: true
+    source: path
+    version: "0.0.1"
   integration_test:
     dependency: "direct dev"
     description: flutter

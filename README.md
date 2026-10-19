@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="flutter_inapp_update — Keep every user on the latest version of your Flutter app" width="100%" />
+<img src="assets/banner.svg" alt="in_app_update_kit — Keep every user on the latest version of your Flutter app" width="100%" />
 
 <br />
 <br />
@@ -53,7 +53,7 @@ InAppUpdateScope(child: MyApp()) // that's it ✨
 
 ```yaml
 dependencies:
-  flutter_inapp_update: ^0.0.1
+  in_app_update_kit: ^0.0.1
 ```
 
 > [!NOTE]
@@ -65,7 +65,7 @@ Wrap your app once, at the root:
 
 ```dart
 import 'package:flutter/foundation.dart';
-import 'package:flutter_inapp_update/flutter_inapp_update.dart';
+import 'package:in_app_update_kit/in_app_update_kit.dart';
 
 void main() {
   runApp(
@@ -382,7 +382,7 @@ There's no newer App Store version for this device. Call `checkForUpdate()` firs
 | Command | What it does |
 | :-- | :-- |
 | `flutter test` | Dart unit tests: types, method channel, API, controller on Android and iOS, scope widget |
-| `cd example/android && ./gradlew :flutter_inapp_update:testDebugUnitTest` | Android unit tests (JUnit + MockK): Play Core → Dart mapping |
+| `cd example/android && ./gradlew :in_app_update_kit:testDebugUnitTest` | Android unit tests (JUnit + MockK): Play Core → Dart mapping |
 | `scripts/test_ios.sh` | iOS unit tests (XCTest): App Store lookup, version compare, update info. macOS + Xcode, no simulator |
 | `cd example && flutter test` | Example app widget tests |
 | `cd example && flutter test integration_test` | Integration tests against the real native code, on a device or simulator |
@@ -393,7 +393,7 @@ There's no newer App Store version for this device. Call `checkForUpdate()` firs
 
 ```
 lib/
-  flutter_inapp_update.dart       Public exports
+  in_app_update_kit.dart       Public exports
   src/in_app_update_api.dart      InAppUpdate: imperative API, unsupported-platform fallback
   src/in_app_update_controller.dart  Mandatory/flexible update flow (ChangeNotifier)
   src/in_app_update_scope.dart    InAppUpdateScope widget
@@ -403,7 +403,7 @@ test/                             Dart tests, per platform
 android/                          Kotlin, Google Play Core app-update
   src/main/.../InAppUpdateMapping.kt  Play → Dart mapping (pure, unit tested)
   src/test/                       JUnit tests
-ios/flutter_inapp_update/Sources/flutter_inapp_update/
+ios/in_app_update_kit/Sources/in_app_update_kit/
   InAppUpdatePlugin.swift         App Store lookup + SKStoreProductViewController
   InAppUpdateInfo.swift           App Store lookup → Dart mapping (Foundation only, unit tested)
 ios/Tests/                        XCTest tests (scripts/test_ios.sh)
@@ -413,7 +413,7 @@ example/                          Example app using the plugin from source
 </details>
 
 > [!NOTE]
-> The example app builds iOS with CocoaPods (`enable-swift-package-manager: false` in `example/pubspec.yaml`). Flutter names a path dependency's Swift package after its folder (`flutter_in_app_update`), which doesn't match the package (`flutter_inapp_update`). Apps that depend on the published plugin aren't affected.
+> The example app builds iOS with CocoaPods (`enable-swift-package-manager: false` in `example/pubspec.yaml`). Flutter names a path dependency's Swift package after its folder (`flutter_in_app_update`), which doesn't match the package (`in_app_update_kit`). Apps that depend on the published plugin aren't affected.
 
 ## 📄 License
 

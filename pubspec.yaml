@@ -1,4 +1,4 @@
-name: flutter_inapp_update
+name: in_app_update_kit
 description: "Flutter plugin for in-app updates on Android (Play Core) and iOS (App Store version check)."
 version: 0.0.1
 homepage: https://github.com/nameisjayant/flutter-in-app-update

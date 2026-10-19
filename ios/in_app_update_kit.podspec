@@ -1,19 +1,19 @@
 #
 # To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html.
-# Run `pod lib lint flutter_inapp_update.podspec` to validate before publishing.
+# Run `pod lib lint in_app_update_kit.podspec` to validate before publishing.
 #
 Pod::Spec.new do |s|
-  s.name             = 'flutter_inapp_update'
+  s.name             = 'in_app_update_kit'
   s.version          = '0.0.1'
   s.summary          = 'Flutter plugin for in-app updates on Android (Play Core) and iOS (App Store version check).'
   s.description      = <<-DESC
 Flutter plugin for in-app updates on Android (Play Core) and iOS (App Store version check).
                        DESC
-  s.homepage         = 'https://github.com/nameisjayant/flutter_flutter_inapp_update'
+  s.homepage         = 'https://github.com/nameisjayant/flutter_in_app_update_kit'
   s.license          = { :file => '../LICENSE' }
   s.author           = { 'nameisjayant' => 'nameisjayant@gmail.com' }
   s.source           = { :path => '.' }
-  s.source_files = 'flutter_inapp_update/Sources/flutter_inapp_update/**/*'
+  s.source_files = 'in_app_update_kit/Sources/in_app_update_kit/**/*'
   s.dependency 'Flutter'
   s.platform = :ios, '15.0'
 
@@ -25,5 +25,5 @@ Flutter plugin for in-app updates on Android (Play Core) and iOS (App Store vers
   # required reason APIs, update the PrivacyInfo.xcprivacy file to describe your
   # plugin's privacy impact, and then uncomment this line. For more information,
   # see https://developer.apple.com/documentation/bundleresources/privacy_manifest_files
-  # s.resource_bundles = {'flutter_inapp_update_privacy' => ['flutter_inapp_update/Sources/flutter_inapp_update/PrivacyInfo.xcprivacy']}
+  # s.resource_bundles = {'in_app_update_kit_privacy' => ['in_app_update_kit/Sources/in_app_update_kit/PrivacyInfo.xcprivacy']}
 end
