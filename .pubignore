@@ -1,3 +1,23 @@
+# A .pubignore replaces .gitignore for publishing, so the build/IDE
+# entries from .gitignore are repeated here.
+.DS_Store
+.idea/
+.vscode/
+*.iml
+.dart_tool/
+.flutter-plugins-dependencies
+build/
+coverage/
+pubspec.lock
+example/build/
+example/.dart_tool/
+example/pubspec.lock
+example/ios/Pods/
+example/ios/.symlinks/
+example/android/.gradle/
+example/android/local.properties
+
+# Repo-only files
 ios/Tests/
 scripts/
 docs/

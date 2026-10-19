@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:in_app_update/in_app_update.dart';
+import 'package:flutter_inapp_update/flutter_inapp_update.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 
 /// Scriptable stand-in for the Kotlin/Swift side.

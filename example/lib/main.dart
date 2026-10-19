@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:in_app_update/in_app_update.dart';
+import 'package:flutter_inapp_update/flutter_inapp_update.dart';
 
 /// Real-app usage is a single widget at the root:
 ///

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>in_app_update docs</title>
+<title>flutter_inapp_update docs</title>
 <meta name="description" content="Flutter plugin for in-app updates on Android (Google Play In-App Updates) and iOS (App Store version check). Wrap your app in one widget." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -325,13 +325,13 @@
     <span class="brand-mark">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M6 20h12"/></svg>
     </span>
-    <code>in_app_update</code>
+    <code>flutter_inapp_update</code>
   </a>
   <span class="version">v0.0.1</span>
   <span class="spacer"></span>
   <a class="top-link hide-sm" href="#quick-start">Quick start</a>
   <a class="top-link hide-sm" href="#api">API</a>
-  <a class="top-link" href="https://github.com/nameisjayant/flutter_in_app_update">GitHub</a>
+  <a class="top-link" href="https://github.com/nameisjayant/flutter-in-app-update">GitHub</a>
   <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">
     <svg id="themeIcon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
   </button>
@@ -347,7 +347,7 @@
         <a class="btn btn-primary" href="#quick-start">Get started
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
-        <a class="btn btn-ghost" href="https://github.com/nameisjayant/flutter_in_app_update">View on GitHub</a>
+        <a class="btn btn-ghost" href="https://github.com/nameisjayant/flutter-in-app-update">View on GitHub</a>
       </div>
       <div class="badges">
         <span class="badge">Play Core app-update 2.1.0</span>
@@ -402,7 +402,7 @@
     <section id="overview">
       <div class="section-kicker">Overview</div>
       <h2>One widget, both stores</h2>
-      <p>On Android, <code>in_app_update</code> uses the <a href="https://developer.android.com/guide/playcore/in-app-updates">Google Play In-App Updates API</a> to show Play's full-screen update screen or download in the background. On iOS, it checks the App Store for a newer version and shows your app's App Store page inside the app. Web and desktop report <code>unsupported</code>, so the same code runs everywhere.</p>
+      <p>On Android, <code>flutter_inapp_update</code> uses the <a href="https://developer.android.com/guide/playcore/in-app-updates">Google Play In-App Updates API</a> to show Play's full-screen update screen or download in the background. On iOS, it checks the App Store for a newer version and shows your app's App Store page inside the app. Web and desktop report <code>unsupported</code>, so the same code runs everywhere.</p>
 
       <div class="features">
         <div class="feature">
@@ -455,8 +455,7 @@
       <h2>Add the dependency</h2>
       <p>Add the plugin to your <code>pubspec.yaml</code>:</p>
 <pre data-lang="yaml">dependencies:
-  in_app_update:
-    git: https://github.com/nameisjayant/flutter_in_app_update</pre>
+  flutter_inapp_update: ^0.0.1</pre>
       <div class="callout">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
         <div><p>No extra setup on either platform. The plugin brings the Play Core dependency on Android and links StoreKit on iOS. Both CocoaPods and Swift Package Manager are supported.</p></div>
@@ -469,7 +468,7 @@
       <h2>Wrap your app once</h2>
       <p>Put <code>InAppUpdateScope</code> at the root of your app:</p>
 <pre data-lang="dart">import 'package:flutter/foundation.dart';
-import 'package:in_app_update/in_app_update.dart';
+import 'package:flutter_inapp_update/flutter_inapp_update.dart';
 
 void main() {
   runApp(
@@ -776,7 +775,7 @@ class InAppUpdateException implements Exception {
           </div>
         </div>
       </div>
-      <p>The <a href="https://github.com/nameisjayant/flutter_in_app_update/tree/main/example"><code>example/</code></a> app shows the current status and version info, and has a Mandatory / Flexible switch.</p>
+      <p>The <a href="https://github.com/nameisjayant/flutter-in-app-update/tree/main/example"><code>example/</code></a> app shows the current status and version info, and has a Mandatory / Flexible switch.</p>
     </section>
 
     <!-- ================= TROUBLESHOOTING ================= -->
@@ -820,7 +819,7 @@ class InAppUpdateException implements Exception {
 </div>
 
 <footer>
-  <a href="https://github.com/nameisjayant/flutter_in_app_update/blob/main/LICENSE">MIT</a> © <a href="https://github.com/nameisjayant">Jayant Kumar</a>
+  <a href="https://github.com/nameisjayant/flutter-in-app-update/blob/main/LICENSE">MIT</a> © <a href="https://github.com/nameisjayant">Jayant Kumar</a>
 </footer>
 
 <script>

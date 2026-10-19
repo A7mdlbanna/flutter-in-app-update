@@ -4,19 +4,19 @@
 import PackageDescription
 
 let package = Package(
-    name: "in_app_update",
+    name: "flutter_inapp_update",
     platforms: [
         .iOS("15.0")
     ],
     products: [
-        .library(name: "in-app-update", targets: ["in_app_update"])
+        .library(name: "flutter-inapp-update", targets: ["flutter_inapp_update"])
     ],
     dependencies: [
         .package(name: "FlutterFramework", path: "../FlutterFramework")
     ],
     targets: [
         .target(
-            name: "in_app_update",
+            name: "flutter_inapp_update",
             dependencies: [
                 .product(name: "FlutterFramework", package: "FlutterFramework")
             ],

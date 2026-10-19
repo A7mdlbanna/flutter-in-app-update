@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:in_app_update/in_app_update.dart';
+import 'package:flutter_inapp_update/flutter_inapp_update.dart';
 import 'package:in_app_update_example/main.dart';
 import 'package:plugin_platform_interface/plugin_platform_interface.dart';
 

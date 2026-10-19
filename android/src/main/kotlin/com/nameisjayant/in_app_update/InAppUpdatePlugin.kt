@@ -37,9 +37,9 @@ class InAppUpdatePlugin :
 
     override fun onAttachedToEngine(binding: FlutterPlugin.FlutterPluginBinding) {
         appUpdateManager = AppUpdateManagerFactory.create(binding.applicationContext)
-        channel = MethodChannel(binding.binaryMessenger, "in_app_update")
+        channel = MethodChannel(binding.binaryMessenger, "flutter_inapp_update")
         channel.setMethodCallHandler(this)
-        installStateChannel = EventChannel(binding.binaryMessenger, "in_app_update/install_state")
+        installStateChannel = EventChannel(binding.binaryMessenger, "flutter_inapp_update/install_state")
         installStateChannel.setStreamHandler(this)
     }
 
