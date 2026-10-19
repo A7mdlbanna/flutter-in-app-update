@@ -20,6 +20,8 @@
   <a href="#-api-reference"><b>API</b></a>
   &nbsp;·&nbsp;
   <a href="example/"><b>Example</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://nameisjayant.github.io/flutter-in-app-update/"><b>Docs</b></a>
 </p>
 
 </div>
